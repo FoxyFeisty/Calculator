@@ -1,0 +1,85 @@
+/*************************
+
+01	Layout
+	01.1 HTML-Elemente
+	01.2 Klassen
+	01.3 IDs
+
+02	Media Queries
+	02.1 Kleine Bildschirme
+
+**************************/
+
+
+/*	01.1 HTML-Elemente */
+
+html {
+	box-sizing: border-box;
+}
+body {
+	background: lightblue;
+	font-family: Helvetica, non-serif;
+}
+table {
+	width: 400px;
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+}
+td {
+	padding: 0.2em;
+}
+
+/*	01.2 Klassen */
+
+.Rechenart {
+	background-color: lightgrey;
+	text-align: center;
+	border: 1px solid grey;
+	cursor: pointer;
+}
+.Eingabe {
+	text-align: center;
+	border: 1px solid grey;
+	cursor: pointer;
+}
+
+/*	01.3 IDs */
+
+#RechnerDiv {
+	margin: 5%;
+	border-radius: 10px;
+	background-color: white;
+	font-size: 3em;
+}
+#Eingabefeld {
+	height: 2em;
+	background-color: black;
+	color: white;
+	text-align: right;
+	border-radius: 10px 10px 0px 0px;
+	white-space: nowrap;
+	max-width: 100%;
+}
+#Null {
+	border-radius: 0px 0px 0px 10px;
+}
+#IstGleich {
+	background-color: orange;
+	border-top: 1px solid grey;
+	text-align: center;
+	border-radius: 0px 0px 10px 0px;
+	cursor: pointer;
+}
+
+/*	02.1 Kleine Bildschirme */
+
+@media screen and (max-width: 450px) {
+	table {
+		width: 90%;
+		text-align: center;
+	}
+	#RechnerDiv {
+		font-size: 150%;
+	}
+}
